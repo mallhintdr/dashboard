@@ -1,0 +1,82 @@
+/* modal.css */
+
+.profile-modal {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.profile-modal-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-modal-header .close-btn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.profile-modal-header .close-btn:hover {
+  color: rgba(255, 255, 255, 0.8); /* Slight color change on hover */
+}
+
+.profile-modal-body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 0 0 12px 12px;
+  line-height: 1.6;
+}
+
+.profile-modal-body h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.profile-modal-body p {
+  font-size: 1rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+}
+
+.profile-modal-body .btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-modal-body .btn:hover {
+  background-color: var(--primary-hover-color); /* Darker shade for hover */
+}
+
+@media (max-width: 768px) {
+  .profile-modal-body {
+    padding: 20px;
+  }
+
+  .profile-modal-header {
+    font-size: 1rem;
+  }
+}

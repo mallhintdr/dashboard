@@ -1,0 +1,17 @@
+/* Zoom Control Buttons */
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: rgba(220, 220, 220, 0.9); /* Light gray background */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover Effects for Zoom Buttons */
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add prominent shadow */
+  background-color: rgba(100, 223, 247, 0.9) !important;
+}

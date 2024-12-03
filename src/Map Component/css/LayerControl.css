@@ -1,0 +1,52 @@
+/* Modern Layer Control Styling */
+.leaflet-control-layers {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  .leaflet-control-layers:hover {
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add prominent shadow on hover */
+  }
+  
+  /* Styling for Layer Control Header */
+  .leaflet-control-layers-toggle {
+    background-color: #007bff; /* Primary color for header */
+    color: white; /* White text for contrast */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px 12px 0 0; /* Rounded top corners */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Styling for Individual Layers */
+  .leaflet-control-layers-base label {
+    display: block;
+    font-size: 13px;
+    padding: 2px;
+    color: #40a5fd; /* Dark text for readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leaflet-control-layers-base label:hover {
+    background-color: rgba(35, 181, 210, 0.9) !important;
+    color: #ffffff;
+
+  }
+  
+  .leaflet-control-layers-base label input {
+    margin-right: 8px;
+  }
+  
+  /* Highlight Selected Layer */
+  .leaflet-control-layers-base label input:checked + span {
+    font-weight: bold;
+    color: #40a5fd; /* Highlight active layer */
+  }
+  
